@@ -9,7 +9,10 @@ redirect_from:
 ---
 ```
 ##   Example of regular route:
+
+{% highlight ruby %}
      get 'products/:id' => 'catalog#view'
+{% endhighlight %}
 
 ##   Example of named route that can be invoked with purchase_url(id: product.id)
      get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
@@ -56,4 +59,6 @@ redirect_from:
        # (app/controllers/admin/products_controller.rb)
        resources :products
      end
+
+
 ```
