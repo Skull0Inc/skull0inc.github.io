@@ -7,12 +7,10 @@ tags: [rails, routes]
 redirect_from:
   - /2013/04/22/
 ---
-```
+{% highlight ruby %}
 ##   Example of regular route:
 
-{% highlight ruby %}
      get 'products/:id' => 'catalog#view'
-{% endhighlight %}
 
 ##   Example of named route that can be invoked with purchase_url(id: product.id)
      get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
@@ -60,5 +58,5 @@ redirect_from:
        resources :products
      end
 
+{% endhighlight %}
 
-```
