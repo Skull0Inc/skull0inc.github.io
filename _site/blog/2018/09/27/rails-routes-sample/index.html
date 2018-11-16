@@ -35,18 +35,18 @@
 
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="MindJective" />
-    <link href='//assets/stylesheets/blog.css' rel="stylesheet" type="text/css">
+    <link href='/assets/stylesheets/blog.css' rel="stylesheet" type="text/css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<script>window.Modernizr || document.write('<script src="//assets/javascripts/modernizr-2.8.3.min.js"><\/script>')</script>
+<script>window.Modernizr || document.write('<script src="/assets/javascripts/modernizr-2.8.3.min.js"><\/script>')</script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    window.jQuery || document.write('<script src="//assets/javascripts/jquery-3.3.1.min.js"><\/script>')
+    window.jQuery || document.write('<script src="/assets/javascripts/jquery-3.3.1.min.js"><\/script>')
 </script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 <script>
-    window.Pace || document.write('<script src="//assets/javascripts/pace.min.js"><\/script>')
+    window.Pace || document.write('<script src="/assets/javascripts/pace.min.js"><\/script>')
 </script>
 
     
@@ -178,60 +178,63 @@
                         </ul>
                     </div>
                     <div itemprop="articleBody">
-                        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##   Example of regular route:
+                        <h2 id="heading-example-of-regular-route">Example of regular route:</h2>
 
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">     <span class="n">get</span> <span class="s1">'products/:id'</span> <span class="o">=&gt;</span> <span class="s1">'catalog#view'</span></code></pre></figure>
 
-&lt;figure class="highlight"&gt;&lt;pre&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;     &lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="s1"&gt;'products/:id'&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;'catalog#view'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-
-##   Example of named route that can be invoked with purchase_url(id: product.id)
-     get 'products/:id/purchase' =&gt; 'catalog#purchase', as: :purchase
-
-##   Example resource route (maps HTTP verbs to controller actions automatically):
-     resources :products
-
-##   Example resource route with options:
-     resources :products do
-       member do
-         get 'short'
-         post 'toggle'
-       end
-  
-       collection do
-         get 'sold'
-       end
-     end
-
-##   Example resource route with sub-resources:
-     resources :products do
-       resources :comments, :sales
-       resource :seller
-     end
-
-##   Example resource route with more complex sub-resources:
-     resources :products do
-       resources :comments
-       resources :sales do
-         get 'recent', on: :collection
-       end
-     end
-
-##   Example resource route with concerns:
-     concern :toggleable do
-       post 'toggle'
-     end
-     resources :posts, concerns: :toggleable
-     resources :photos, concerns: :toggleable
-
-##   Example resource route within a namespace:
-     namespace :admin do
-       # Directs /admin/products/* to Admin::ProductsController
-       # (app/controllers/admin/products_controller.rb)
-       resources :products
-     end
-
-
+<h2 id="heading-example-of-named-route-that-can-be-invoked-with-purchase_urlid-productid">Example of named route that can be invoked with purchase_url(id: product.id)</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> get 'products/:id/purchase' =&gt; 'catalog#purchase', as: :purchase
 </code></pre></div></div>
+
+<h2 id="heading-example-resource-route-maps-http-verbs-to-controller-actions-automatically">Example resource route (maps HTTP verbs to controller actions automatically):</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> resources :products
+</code></pre></div></div>
+
+<h2 id="heading-example-resource-route-with-options">Example resource route with options:</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> resources :products do
+   member do
+     get 'short'
+     post 'toggle'
+   end
+  
+   collection do
+     get 'sold'
+   end
+ end
+</code></pre></div></div>
+
+<h2 id="heading-example-resource-route-with-sub-resources">Example resource route with sub-resources:</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> resources :products do
+   resources :comments, :sales
+   resource :seller
+ end
+</code></pre></div></div>
+
+<h2 id="heading-example-resource-route-with-more-complex-sub-resources">Example resource route with more complex sub-resources:</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> resources :products do
+   resources :comments
+   resources :sales do
+     get 'recent', on: :collection
+   end
+ end
+</code></pre></div></div>
+
+<h2 id="heading-example-resource-route-with-concerns">Example resource route with concerns:</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> concern :toggleable do
+   post 'toggle'
+ end
+ resources :posts, concerns: :toggleable
+ resources :photos, concerns: :toggleable
+</code></pre></div></div>
+
+<h2 id="heading-example-resource-route-within-a-namespace">Example resource route within a namespace:</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> namespace :admin do
+   # Directs /admin/products/* to Admin::ProductsController
+   # (app/controllers/admin/products_controller.rb)
+   resources :products
+ end
+</code></pre></div></div>
+
 
                     </div>
                 </div>
@@ -348,12 +351,12 @@ $(document).ready(function () {
 </script>
 
 <!-- Show menu overlay + Jekyll Simple Search option -->
-<script src="//assets/javascripts/jekyll-search.jquery.js"></script>
+<script src="/assets/javascripts/jekyll-search.jquery.js"></script>
 <script>
 $(document).ready(function () {
     $('.search-field').simpleJekyllSearch({
-      jsonFile: '//search.json',
-      template: '<li><a href="/{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></li>',
+      jsonFile: '/search.json',
+      template: '<li><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></li>',
       searchResults: '.search-wrapper .results',
       searchResultsTitle: '<h4>Search results</h4>',
       noResults: '<p>Oh shucks<br/><small>Nothing found :(</small></p>'
@@ -395,16 +398,16 @@ $(document).ready(function () {
 
 <script src='//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js'></script>
 <script src='//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-buttons.min.js'></script>
-<script src="//assets/javascripts/unveil/jquery.unveil.min.js"></script>
+<script src="/assets/javascripts/unveil/jquery.unveil.min.js"></script>
 
 <script>
-    window.jQuery.fancybox || document.write('<script src="//assets/javascripts/fancybox/jquery.fancybox.pack.js?v=2.1.4"><\/script>')
-    window.jQuery.fancybox.helpers.buttons || document.write('<script src="//assets/javascripts/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"><\/script>')
+    window.jQuery.fancybox || document.write('<script src="/assets/javascripts/fancybox/jquery.fancybox.pack.js?v=2.1.4"><\/script>')
+    window.jQuery.fancybox.helpers.buttons || document.write('<script src="/assets/javascripts/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"><\/script>')
 </script>
 
 <script>
-    $("head").append('<link rel="stylesheet" href="//assets/javascripts/fancybox/jquery.fancybox.css?v=2.1.4" type="text/css" />');
-    $("head").append('<link rel="stylesheet" href="//assets/javascripts/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" />');
+    $("head").append('<link rel="stylesheet" href="/assets/javascripts/fancybox/jquery.fancybox.css?v=2.1.4" type="text/css" />');
+    $("head").append('<link rel="stylesheet" href="/assets/javascripts/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" />');
     $(".post-image").fancybox({
         prevEffect: 'none',
         nextEffect: 'none',

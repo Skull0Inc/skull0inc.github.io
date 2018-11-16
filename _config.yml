@@ -22,8 +22,8 @@ sass:
   style: compressed
 
 # Site Data
-url: 'skull0inc.github.io' # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: '/' # the subpath of your site, e.g. /blog
+url:  # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:  # the subpath of your site, e.g. /blog
 title: MindJective
 description: "A digital space for technical notes,snippets and ramblings online."
 keywords: 'jekyll,theme,gem-based,blog'
