@@ -16,3 +16,7 @@ yarn.lock
 # Ignore Yard Doc
 /doc
 .yardoc/
+
+#vim swap files
+*.sw*
+

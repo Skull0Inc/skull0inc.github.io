@@ -1,64 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-11-16T15:51:02-04:00</updated><id>http://localhost:4000/</id><title type="html">MindJective</title><subtitle>A digital space for technical notes,snippets and ramblings online.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;job_title&quot;=&gt;nil, &quot;location&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;social_links&quot;=&gt;[{&quot;name&quot;=&gt;&quot;facebook&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/skull0inc/&quot;}, {&quot;name&quot;=&gt;&quot;instagram&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;linkedin&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;stackoverflow&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;twitter&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;vk&quot;, &quot;url&quot;=&gt;nil}]}</name></author><entry><title type="html">Updating rbenv on Linux(Ubuntu)</title><link href="http://localhost:4000/blog/2018/09/28/updating-rbenv-linux/" rel="alternate" type="text/html" title="Updating rbenv on Linux(Ubuntu)" /><published>2018-09-28T00:00:00-04:00</published><updated>2018-09-28T00:00:00-04:00</updated><id>http://localhost:4000/blog/2018/09/28/updating-rbenv-linux</id><content type="html" xml:base="http://localhost:4000/blog/2018/09/28/updating-rbenv-linux/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-11-16T23:47:30-04:00</updated><id>http://localhost:4000/</id><title type="html">MindJective</title><subtitle>A digital space for technical notes,snippets and ramblings online.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;job_title&quot;=&gt;nil, &quot;location&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;social_links&quot;=&gt;[{&quot;name&quot;=&gt;&quot;facebook&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/skull0inc/&quot;}, {&quot;name&quot;=&gt;&quot;instagram&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;linkedin&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;stackoverflow&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;twitter&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;vk&quot;, &quot;url&quot;=&gt;nil}]}</name></author><entry><title type="html">Updating rbenv on Linux(Ubuntu)</title><link href="http://localhost:4000/blog/2018/09/28/updating-rbenv-linux/" rel="alternate" type="text/html" title="Updating rbenv on Linux(Ubuntu)" /><published>2018-09-28T00:00:00-04:00</published><updated>2018-09-28T00:00:00-04:00</updated><id>http://localhost:4000/blog/2018/09/28/updating-rbenv-linux</id><content type="html" xml:base="http://localhost:4000/blog/2018/09/28/updating-rbenv-linux/">&lt;blockquote&gt;
   &lt;p&gt;#Ref: https://www.endpoint.com/blog/2015/11/03/updating-rbenv-ruby-build-on-ubuntu&lt;/p&gt;
   &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/.rbenv/plugins/ruby-build/
 git pull
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
-&lt;/blockquote&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;job_title&quot;=&gt;nil, &quot;location&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;social_links&quot;=&gt;[{&quot;name&quot;=&gt;&quot;facebook&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/skull0inc/&quot;}, {&quot;name&quot;=&gt;&quot;instagram&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;linkedin&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;stackoverflow&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;twitter&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;vk&quot;, &quot;url&quot;=&gt;nil}]}</name></author><category term="ruby-management" /><category term="snippet" /><category term="system" /><summary type="html">#Ref: https://www.endpoint.com/blog/2015/11/03/updating-rbenv-ruby-build-on-ubuntu cd ~/.rbenv/plugins/ruby-build/ git pull</summary></entry><entry><title type="html">Rails Routing Examples</title><link href="http://localhost:4000/blog/2018/09/27/rails-routes-sample/" rel="alternate" type="text/html" title="Rails Routing Examples" /><published>2018-09-27T00:00:00-04:00</published><updated>2018-09-27T00:00:00-04:00</updated><id>http://localhost:4000/blog/2018/09/27/rails-routes-sample</id><content type="html" xml:base="http://localhost:4000/blog/2018/09/27/rails-routes-sample/">&lt;h2 id=&quot;heading-example-of-regular-route&quot;&gt;Example of regular route:&lt;/h2&gt;
+&lt;/blockquote&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;job_title&quot;=&gt;nil, &quot;location&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;social_links&quot;=&gt;[{&quot;name&quot;=&gt;&quot;facebook&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/skull0inc/&quot;}, {&quot;name&quot;=&gt;&quot;instagram&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;linkedin&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;stackoverflow&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;twitter&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;vk&quot;, &quot;url&quot;=&gt;nil}]}</name></author><category term="ruby-management" /><category term="snippet" /><category term="system" /><summary type="html">#Ref: https://www.endpoint.com/blog/2015/11/03/updating-rbenv-ruby-build-on-ubuntu cd ~/.rbenv/plugins/ruby-build/ git pull</summary></entry><entry><title type="html">Rails Routing Examples</title><link href="http://localhost:4000/blog/2018/09/27/rails-routes-sample/" rel="alternate" type="text/html" title="Rails Routing Examples" /><published>2018-09-27T00:00:00-04:00</published><updated>2018-09-27T00:00:00-04:00</updated><id>http://localhost:4000/blog/2018/09/27/rails-routes-sample</id><content type="html" xml:base="http://localhost:4000/blog/2018/09/27/rails-routes-sample/">&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;##   Example of regular route:&lt;/span&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;     &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'products/:id'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'catalog#view'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+     &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'products/:id'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'catalog#view'&lt;/span&gt;
 
-&lt;h2 id=&quot;heading-example-of-named-route-that-can-be-invoked-with-purchase_urlid-productid&quot;&gt;Example of named route that can be invoked with purchase_url(id: product.id)&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; get 'products/:id/purchase' =&amp;gt; 'catalog#purchase', as: :purchase
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;c1&quot;&gt;##   Example of named route that can be invoked with purchase_url(id: product.id)&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'products/:id/purchase'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'catalog#purchase'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;as: :purchase&lt;/span&gt;
 
-&lt;h2 id=&quot;heading-example-resource-route-maps-http-verbs-to-controller-actions-automatically&quot;&gt;Example resource route (maps HTTP verbs to controller actions automatically):&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; resources :products
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;c1&quot;&gt;##   Example resource route (maps HTTP verbs to controller actions automatically):&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:products&lt;/span&gt;
 
-&lt;h2 id=&quot;heading-example-resource-route-with-options&quot;&gt;Example resource route with options:&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; resources :products do
-   member do
-     get 'short'
-     post 'toggle'
-   end
+&lt;span class=&quot;c1&quot;&gt;##   Example resource route with options:&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:products&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;member&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'short'&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'toggle'&lt;/span&gt;
+       &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
   
-   collection do
-     get 'sold'
-   end
- end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+       &lt;span class=&quot;n&quot;&gt;collection&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'sold'&lt;/span&gt;
+       &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;h2 id=&quot;heading-example-resource-route-with-sub-resources&quot;&gt;Example resource route with sub-resources:&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; resources :products do
-   resources :comments, :sales
-   resource :seller
- end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;c1&quot;&gt;##   Example resource route with sub-resources:&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:products&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:comments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:sales&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;resource&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:seller&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;h2 id=&quot;heading-example-resource-route-with-more-complex-sub-resources&quot;&gt;Example resource route with more complex sub-resources:&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; resources :products do
-   resources :comments
-   resources :sales do
-     get 'recent', on: :collection
-   end
- end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;c1&quot;&gt;##   Example resource route with more complex sub-resources:&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:products&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:comments&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:sales&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'recent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;on: :collection&lt;/span&gt;
+       &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;h2 id=&quot;heading-example-resource-route-with-concerns&quot;&gt;Example resource route with concerns:&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; concern :toggleable do
-   post 'toggle'
- end
- resources :posts, concerns: :toggleable
- resources :photos, concerns: :toggleable
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;c1&quot;&gt;##   Example resource route with concerns:&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;concern&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:toggleable&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'toggle'&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;concerns: :toggleable&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:photos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;concerns: :toggleable&lt;/span&gt;
 
-&lt;h2 id=&quot;heading-example-resource-route-within-a-namespace&quot;&gt;Example resource route within a namespace:&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; namespace :admin do
-   # Directs /admin/products/* to Admin::ProductsController
-   # (app/controllers/admin/products_controller.rb)
-   resources :products
- end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;job_title&quot;=&gt;nil, &quot;location&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;social_links&quot;=&gt;[{&quot;name&quot;=&gt;&quot;facebook&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/skull0inc/&quot;}, {&quot;name&quot;=&gt;&quot;instagram&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;linkedin&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;stackoverflow&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;twitter&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;vk&quot;, &quot;url&quot;=&gt;nil}]}</name></author><category term="rails" /><category term="routes" /><summary type="html">Example of regular route:</summary></entry><entry><title type="html">A quick demo of Simple Texture theme's code highlighting features</title><link href="http://localhost:4000/blog/2017/05/27/code-highlighting/" rel="alternate" type="text/html" title="A quick demo of Simple Texture theme's code highlighting features" /><published>2017-05-27T00:00:00-04:00</published><updated>2017-05-27T00:00:00-04:00</updated><id>http://localhost:4000/blog/2017/05/27/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2017/05/27/code-highlighting/">&lt;blockquote&gt;
+&lt;span class=&quot;c1&quot;&gt;##   Example resource route within a namespace:&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:admin&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+       &lt;span class=&quot;c1&quot;&gt;# Directs /admin/products/* to Admin::ProductsController&lt;/span&gt;
+       &lt;span class=&quot;c1&quot;&gt;# (app/controllers/admin/products_controller.rb)&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:products&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;job_title&quot;=&gt;nil, &quot;location&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;social_links&quot;=&gt;[{&quot;name&quot;=&gt;&quot;facebook&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/skull0inc/&quot;}, {&quot;name&quot;=&gt;&quot;instagram&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;linkedin&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;stackoverflow&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;twitter&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;vk&quot;, &quot;url&quot;=&gt;nil}]}</name></author><category term="rails" /><category term="routes" /><summary type="html">~~~ ruby</summary></entry><entry><title type="html">A quick demo of Simple Texture theme's code highlighting features</title><link href="http://localhost:4000/blog/2017/05/27/code-highlighting/" rel="alternate" type="text/html" title="A quick demo of Simple Texture theme's code highlighting features" /><published>2017-05-27T00:00:00-04:00</published><updated>2017-05-27T00:00:00-04:00</updated><id>http://localhost:4000/blog/2017/05/27/code-highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2017/05/27/code-highlighting/">&lt;blockquote&gt;
   &lt;p&gt;This is code blocks and highlighting test page for &lt;a href=&quot;https://github.com/yizeng/jekyll-theme-simple-texture&quot;&gt;Simple Texture&lt;/a&gt; theme.&lt;/p&gt;
 &lt;/blockquote&gt;
 

@@ -178,61 +178,56 @@
                         </ul>
                     </div>
                     <div itemprop="articleBody">
-                        <h2 id="heading-example-of-regular-route">Example of regular route:</h2>
+                        <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1">##   Example of regular route:</span>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">     <span class="n">get</span> <span class="s1">'products/:id'</span> <span class="o">=&gt;</span> <span class="s1">'catalog#view'</span></code></pre></figure>
+     <span class="n">get</span> <span class="s1">'products/:id'</span> <span class="o">=&gt;</span> <span class="s1">'catalog#view'</span>
 
-<h2 id="heading-example-of-named-route-that-can-be-invoked-with-purchase_urlid-productid">Example of named route that can be invoked with purchase_url(id: product.id)</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> get 'products/:id/purchase' =&gt; 'catalog#purchase', as: :purchase
-</code></pre></div></div>
+<span class="c1">##   Example of named route that can be invoked with purchase_url(id: product.id)</span>
+     <span class="n">get</span> <span class="s1">'products/:id/purchase'</span> <span class="o">=&gt;</span> <span class="s1">'catalog#purchase'</span><span class="p">,</span> <span class="ss">as: :purchase</span>
 
-<h2 id="heading-example-resource-route-maps-http-verbs-to-controller-actions-automatically">Example resource route (maps HTTP verbs to controller actions automatically):</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> resources :products
-</code></pre></div></div>
+<span class="c1">##   Example resource route (maps HTTP verbs to controller actions automatically):</span>
+     <span class="n">resources</span> <span class="ss">:products</span>
 
-<h2 id="heading-example-resource-route-with-options">Example resource route with options:</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> resources :products do
-   member do
-     get 'short'
-     post 'toggle'
-   end
+<span class="c1">##   Example resource route with options:</span>
+     <span class="n">resources</span> <span class="ss">:products</span> <span class="k">do</span>
+       <span class="n">member</span> <span class="k">do</span>
+         <span class="n">get</span> <span class="s1">'short'</span>
+         <span class="n">post</span> <span class="s1">'toggle'</span>
+       <span class="k">end</span>
   
-   collection do
-     get 'sold'
-   end
- end
-</code></pre></div></div>
+       <span class="n">collection</span> <span class="k">do</span>
+         <span class="n">get</span> <span class="s1">'sold'</span>
+       <span class="k">end</span>
+     <span class="k">end</span>
 
-<h2 id="heading-example-resource-route-with-sub-resources">Example resource route with sub-resources:</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> resources :products do
-   resources :comments, :sales
-   resource :seller
- end
-</code></pre></div></div>
+<span class="c1">##   Example resource route with sub-resources:</span>
+     <span class="n">resources</span> <span class="ss">:products</span> <span class="k">do</span>
+       <span class="n">resources</span> <span class="ss">:comments</span><span class="p">,</span> <span class="ss">:sales</span>
+       <span class="n">resource</span> <span class="ss">:seller</span>
+     <span class="k">end</span>
 
-<h2 id="heading-example-resource-route-with-more-complex-sub-resources">Example resource route with more complex sub-resources:</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> resources :products do
-   resources :comments
-   resources :sales do
-     get 'recent', on: :collection
-   end
- end
-</code></pre></div></div>
+<span class="c1">##   Example resource route with more complex sub-resources:</span>
+     <span class="n">resources</span> <span class="ss">:products</span> <span class="k">do</span>
+       <span class="n">resources</span> <span class="ss">:comments</span>
+       <span class="n">resources</span> <span class="ss">:sales</span> <span class="k">do</span>
+         <span class="n">get</span> <span class="s1">'recent'</span><span class="p">,</span> <span class="ss">on: :collection</span>
+       <span class="k">end</span>
+     <span class="k">end</span>
 
-<h2 id="heading-example-resource-route-with-concerns">Example resource route with concerns:</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> concern :toggleable do
-   post 'toggle'
- end
- resources :posts, concerns: :toggleable
- resources :photos, concerns: :toggleable
-</code></pre></div></div>
+<span class="c1">##   Example resource route with concerns:</span>
+     <span class="n">concern</span> <span class="ss">:toggleable</span> <span class="k">do</span>
+       <span class="n">post</span> <span class="s1">'toggle'</span>
+     <span class="k">end</span>
+     <span class="n">resources</span> <span class="ss">:posts</span><span class="p">,</span> <span class="ss">concerns: :toggleable</span>
+     <span class="n">resources</span> <span class="ss">:photos</span><span class="p">,</span> <span class="ss">concerns: :toggleable</span>
 
-<h2 id="heading-example-resource-route-within-a-namespace">Example resource route within a namespace:</h2>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> namespace :admin do
-   # Directs /admin/products/* to Admin::ProductsController
-   # (app/controllers/admin/products_controller.rb)
-   resources :products
- end
+<span class="c1">##   Example resource route within a namespace:</span>
+     <span class="n">namespace</span> <span class="ss">:admin</span> <span class="k">do</span>
+       <span class="c1"># Directs /admin/products/* to Admin::ProductsController</span>
+       <span class="c1"># (app/controllers/admin/products_controller.rb)</span>
+       <span class="n">resources</span> <span class="ss">:products</span>
+     <span class="k">end</span>
 </code></pre></div></div>
 
 
