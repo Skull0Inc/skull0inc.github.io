@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Adding custom fonts (Icomoon)"
-description: ""
-categories: [jekyll, fonts]
-tags: [jekyll,icons,fonts, icomoon]
+title: "Adding custom fonts (Icomoon) to Jekyll"
+description: "Adding Icomoon to Jekyll"
+categories: [jekyll]
+tags: [jekyll,icons,fonts,icomoon]
 ---
 
 ## Description
@@ -27,6 +27,7 @@ Assuming you already know the awesomeness that Icomoon is; I'll imagine you alre
 6. For **my** particular case I have <b>both</b> `simple-texture-{blog,home}.scss` within the `_sass` folder.
 7. Add the relative **@import 'custom-icons';** to the main .scss file(s) to include the icons.
 8. Remember the semi-colon at end of the <b>@import 'custom-icons';</b>  statement.
+
 
 
 ##### End Notes
