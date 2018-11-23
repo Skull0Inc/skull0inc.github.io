@@ -105,6 +105,14 @@ textarea {
 @import 'simple-texture/blog/footer';
 @import 'simple-texture/blog/content';
 @import 'simple-texture/blog/responsive';
+
+
+//Custom classes
+
+img.jekyll-img{
+	max-width: 90px;
+	min-width: 90px;
+}
 //ul {
   //list-style:none;
   //padding-left: 1em;

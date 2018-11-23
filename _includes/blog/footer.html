@@ -6,11 +6,14 @@
 									
 									<!--original setting -->
 									<!--<h4><a href="{{ site.paths.home | relative_url }}"><span class="icon-home" style="font-size:30px;"></span> {% comment %} {{ site.data.i18n[site.lang].home }} {% endcomment %}</a></h4>-->
-									<h4><a href="{{ site.paths.blog | relative_url }}">{Blog Posts}</a></h4>
+									<!--<h4><a href="{{ site.paths.blog | relative_url }}">{Blog Posts}</a></h4>-->
+									<h2><a href="{{ site.paths.blog | relative_url }}">{Blog Posts}</a></h2>
                     {% if site.blog.footer_content %}
                         <p>{{ site.blog.footer_content }}</p>
                     {% endif %}
-                    {{ site.data.i18n[site.lang].theme_info }}
+										<p>
+										{{ site.data.i18n[site.lang].theme_info }}
+										</p>
                 </div>
                 <div class="social-links">
                     {% if site.author.email %}
@@ -25,7 +28,7 @@
                 </div>
             </div>
 
-						<a href="http://jekyllrb.com/"><img src="{{ site.blog.jekyll_image }}" style="width:10%; height:15%; " alt=""></a>
+						<a href="http://jekyllrb.com/"><img class="jekyll-img" src="{{ site.blog.jekyll_image }}" alt=""></a>
         </div>
     </div>
     <a href="#" class="internal back-to-top">{{ site.data.i18n[site.lang].back_to_top }}</a>
