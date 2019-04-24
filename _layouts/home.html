@@ -24,7 +24,7 @@
     <ul id="menu">
         <li data-menuanchor="home"><a href="#splash">Home</a></li>
         <li data-menuanchor="blog"><a href="#blog">Blog</a></li>
-        <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
+        <!--<li data-menuanchor="skills"><a href="#skills">Skills</a></li>-->
     </ul>
 
     <div id="section0" class="section" data-name="bio">
@@ -58,22 +58,22 @@
     </div>
 
 		<!--Coming soon-->
-		<div id="section2" class="section" data-name="skills">
-				<h1 class="animated hidden">
-						<a class="btn-enter btn-light-on-light" title="{{ site.data.i18n[site.lang].enter_skills }}" href="{{ site.paths.blog | relative_url }}">{{ site.data.i18n[site.lang].enter_skills }}</a>
-				</h1>
-				<div class="social-links animated hidden">
-						<!--<a class="btn-light ico-rss" href="{{ site.baseurl }}/feed.xml" rel="me" target="_blank" title="feed"></a>-->
-						{% if site.author.email %}
-								<a class="btn-light ico-gmail" href="mailto:{{ site.author.email }}" rel="me" target="_blank" title="email"></a>
-						{% endif %}
-						{% for link in site.author.social_links %}
-								{% if link.url %}
-										<!--<a class="btn-light ico-{{ link.name }}" href="{{ link.url }}" rel="me" target="_blank" title="{{ link.name }}"></a>-->
-								{% endif %}
-						{% endfor %}
-				</div>
-		</div>
+		<!--<div id="section2" class="section" data-name="skills">-->
+				<!--<h1 class="animated hidden">-->
+						<!--<a class="btn-enter btn-light-on-light" title="{{ site.data.i18n[site.lang].enter_skills }}" href="{{ site.paths.blog | relative_url }}">{{ site.data.i18n[site.lang].enter_skills }}</a>-->
+				<!--</h1>-->
+				<!--<div class="social-links animated hidden">-->
+						<!--[><a class="btn-light ico-rss" href="{{ site.baseurl }}/feed.xml" rel="me" target="_blank" title="feed"></a><]-->
+						<!--{% if site.author.email %}-->
+								<!--<a class="btn-light ico-gmail" href="mailto:{{ site.author.email }}" rel="me" target="_blank" title="email"></a>-->
+						<!--{% endif %}-->
+						<!--{% for link in site.author.social_links %}-->
+								<!--{% if link.url %}-->
+										<!--[><a class="btn-light ico-{{ link.name }}" href="{{ link.url }}" rel="me" target="_blank" title="{{ link.name }}"></a><]-->
+								<!--{% endif %}-->
+						<!--{% endfor %}-->
+				<!--</div>-->
+		<!--</div>-->
     {% include home/scripts.html %}
 </body>
 

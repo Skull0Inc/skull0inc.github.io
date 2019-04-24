@@ -3,7 +3,8 @@
 <script>
     $(document).ready(function () {
         $.fn.fullpage({
-            anchors: ['home', 'blog', 'skills'],
+            //anchors: ['home', 'blog', 'skills'], //Duplicate adding 'skills', this
+            anchors: ['home', 'blog'],
             css3: true,
             fixedElements: '.site-notice',
             menu: '#menu',
@@ -20,9 +21,9 @@
                 if (index === 2) {
                     $('#section1 h1, #section1 .social-links').removeClass('hidden').addClass('fadeInUp');
                 }
-                if (index === 3) {
-                    $('#section2 h1, #section2 .social-links').removeClass('hidden').addClass('fadeInUp');
-                }
+								if (index === 3) {
+										$('#section2 h1, #section2 .social-links').removeClass('hidden').addClass('fadeInUp');
+								}
             },
 
             onLeave: function (index, direction) {
@@ -33,7 +34,7 @@
                     $('#section1 h1, #section1 .social-links').addClass('hidden').removeClass('fadeInUp');
                 }
                 if (index == 3 && direction == 'up') {
-                    //$('#section2 h1, #section2 .social-links').addClass('hidden').removeClass('fadeInUp');
+										//$('#section2 h1, #section2 .social-links').addClass('hidden').removeClass('fadeInUp');
                 }
             }
         });

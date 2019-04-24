@@ -56,7 +56,7 @@
     <ul id="menu">
         <li data-menuanchor="home"><a href="#splash">Home</a></li>
         <li data-menuanchor="blog"><a href="#blog">Blog</a></li>
-        <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
+        <!--<li data-menuanchor="skills"><a href="#skills">Skills</a></li>-->
     </ul>
 
     <div id="section0" class="section" data-name="bio">
@@ -106,38 +106,39 @@
     </div>
 
 		<!--Coming soon-->
-		<div id="section2" class="section" data-name="skills">
-				<h1 class="animated hidden">
-						<a class="btn-enter btn-light-on-light" title="&lt; Skills &gt;" href="/blog/">&lt; Skills &gt;</a>
-				</h1>
-				<div class="social-links animated hidden">
-						<!--<a class="btn-light ico-rss" href="/feed.xml" rel="me" target="_blank" title="feed"></a>-->
-						
-						
-								
-						
-								
-										<!--<a class="btn-light ico-github" href="https://github.com/skull0inc/" rel="me" target="_blank" title="github"></a>-->
-								
-						
-								
-						
-								
-						
-								
-						
-								
-						
-								
-						
-				</div>
-		</div>
+		<!--<div id="section2" class="section" data-name="skills">-->
+				<!--<h1 class="animated hidden">-->
+						<!--<a class="btn-enter btn-light-on-light" title="&lt; Skills &gt;" href="/blog/">&lt; Skills &gt;</a>-->
+				<!--</h1>-->
+				<!--<div class="social-links animated hidden">-->
+						<!--[><a class="btn-light ico-rss" href="/feed.xml" rel="me" target="_blank" title="feed"></a><]-->
+						<!---->
+						<!---->
+								<!---->
+						<!---->
+								<!---->
+										<!--[><a class="btn-light ico-github" href="https://github.com/skull0inc/" rel="me" target="_blank" title="github"></a><]-->
+								<!---->
+						<!---->
+								<!---->
+						<!---->
+								<!---->
+						<!---->
+								<!---->
+						<!---->
+								<!---->
+						<!---->
+								<!---->
+						<!---->
+				<!--</div>-->
+		<!--</div>-->
     <script src="/assets/javascripts/jquery.fullPage.min.js"></script>
 <script src="/assets/javascripts/jquery.easing.min.js"></script>
 <script>
     $(document).ready(function () {
         $.fn.fullpage({
-            anchors: ['home', 'blog', 'skills'],
+            //anchors: ['home', 'blog', 'skills'], //Duplicate adding 'skills', this
+            anchors: ['home', 'blog'],
             css3: true,
             fixedElements: '.site-notice',
             menu: '#menu',
@@ -154,9 +155,9 @@
                 if (index === 2) {
                     $('#section1 h1, #section1 .social-links').removeClass('hidden').addClass('fadeInUp');
                 }
-                if (index === 3) {
-                    $('#section2 h1, #section2 .social-links').removeClass('hidden').addClass('fadeInUp');
-                }
+								if (index === 3) {
+										$('#section2 h1, #section2 .social-links').removeClass('hidden').addClass('fadeInUp');
+								}
             },
 
             onLeave: function (index, direction) {
@@ -167,7 +168,7 @@
                     $('#section1 h1, #section1 .social-links').addClass('hidden').removeClass('fadeInUp');
                 }
                 if (index == 3 && direction == 'up') {
-                    //$('#section2 h1, #section2 .social-links').addClass('hidden').removeClass('fadeInUp');
+										//$('#section2 h1, #section2 .social-links').addClass('hidden').removeClass('fadeInUp');
                 }
             }
         });

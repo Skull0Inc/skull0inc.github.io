@@ -1,6 +1,13 @@
 [
   
     {
+      "title"      : "Adding HTTPS to Rails-Nginx App",
+      "url"        : "/blog/2019/04/23/adding-https-rails-nginx/",
+      "date"       : "2019-04-23 00:00:00 -0400",
+      "shortdate"  : "April 23, 2019"
+    } ,
+  
+    {
       "title"      : "Adding custom fonts (Icomoon) to Jekyll",
       "url"        : "/blog/2018/11/18/adding-custom-icomoon-fonts-to-jekyll/",
       "date"       : "2018-11-18 00:00:00 -0400",

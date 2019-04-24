@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-11-23T01:27:13-04:00</updated><id>http://localhost:4000/</id><title type="html">MindJective</title><subtitle>A digital space for technical notes,snippets and ramblings online.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;job_title&quot;=&gt;nil, &quot;location&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;social_links&quot;=&gt;[{&quot;name&quot;=&gt;&quot;facebook&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/skull0inc/&quot;}, {&quot;name&quot;=&gt;&quot;instagram&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;linkedin&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;stackoverflow&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;twitter&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;vk&quot;, &quot;url&quot;=&gt;nil}]}</name></author><entry><title type="html">Adding custom fonts (Icomoon) to Jekyll</title><link href="http://localhost:4000/blog/2018/11/18/adding-custom-icomoon-fonts-to-jekyll/" rel="alternate" type="text/html" title="Adding custom fonts (Icomoon) to Jekyll" /><published>2018-11-18T00:00:00-04:00</published><updated>2018-11-18T00:00:00-04:00</updated><id>http://localhost:4000/blog/2018/11/18/adding-custom-icomoon-fonts-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/2018/11/18/adding-custom-icomoon-fonts-to-jekyll/">&lt;h2 id=&quot;heading-description&quot;&gt;Description&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2019-04-24T00:59:11-04:00</updated><id>http://localhost:4000/</id><title type="html">MindJective</title><subtitle>A digital space for technical notes,snippets and ramblings online.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;job_title&quot;=&gt;nil, &quot;location&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;social_links&quot;=&gt;[{&quot;name&quot;=&gt;&quot;facebook&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/skull0inc/&quot;}, {&quot;name&quot;=&gt;&quot;instagram&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;linkedin&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;stackoverflow&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;twitter&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;vk&quot;, &quot;url&quot;=&gt;nil}]}</name></author><entry><title type="html">Adding HTTPS to Rails-Nginx App</title><link href="http://localhost:4000/blog/2019/04/23/adding-https-rails-nginx/" rel="alternate" type="text/html" title="Adding HTTPS to Rails-Nginx App" /><published>2019-04-23T00:00:00-04:00</published><updated>2019-04-23T00:00:00-04:00</updated><id>http://localhost:4000/blog/2019/04/23/adding-https-rails-nginx</id><content type="html" xml:base="http://localhost:4000/blog/2019/04/23/adding-https-rails-nginx/">&lt;h1 id=&quot;heading-adding-https-to-rails-nginx-app-letsencrypt&quot;&gt;Adding HTTPS to Rails-Nginx App (LetsEncrypt)&lt;/h1&gt;
+
+&lt;p&gt;This process can be broken down into (3) main sections:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Configuring Rails for ssl&lt;/li&gt;
+  &lt;li&gt;Installing and setting up LetsEncrypt&lt;/li&gt;
+  &lt;li&gt;Configuring Nginx to allow and redirect to HTTPS&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;heading-1-configure-rails-for-https&quot;&gt;1. Configure Rails for HTTPS&lt;/h3&gt;
+
+&lt;p&gt;The main(only) file to focus on is »  &lt;code class=&quot;highlighter-rouge&quot;&gt;/config/environments/production.rb&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;#Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;force_ssl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;heading-2-setting-up-letsencrypt&quot;&gt;2. Setting up LetsEncrypt&lt;/h3&gt;
+
+&lt;p&gt;in &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/&amp;lt;your_username&amp;gt;/&lt;/code&gt; directory, or some other directory of choice, do the following in terminal:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/letsencrypt/letsencrypt
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ./letsencrypt &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./letsencrypt-auto
+&lt;span class=&quot;c&quot;&gt;# Do a dry run TEST&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; ./certbot-auto certonly &lt;span class=&quot;nt&quot;&gt;--standalone&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &amp;lt;domain_name&amp;gt;.com &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; www.&amp;lt;domain_name&amp;gt;.com &lt;span class=&quot;nt&quot;&gt;--dry-run&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Once everything with dry run checks out then do full run&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Note: In some instances Nginx may need to be halted with: sudo service nginx stop to get access to port 80&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; ./certbot-auto certonly &lt;span class=&quot;nt&quot;&gt;--standalone&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &amp;lt;domain_name&amp;gt;.com &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; www.&amp;lt;domain_name&amp;gt;.com
+&lt;span class=&quot;c&quot;&gt;# Enter crontab settings&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;crontab &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; 
+&lt;span class=&quot;c&quot;&gt;# Make new setting to renew certificates, in this case: (Every Saturday at 9:05 a.m)&lt;/span&gt;
+05 9 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/letsencrypt/ &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./certbot-auto renew &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; /etc/init.d/nginx reload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note: the above &lt;em&gt;most likely will&lt;/em&gt; install its own config stuff within an existing nginx config file. All of the stuff added is necessary for it 
+to work, however can be altered slightly as seen below.&lt;/p&gt;
+
+&lt;h3 id=&quot;heading-3-configuring-nginx-config-file-remote-server&quot;&gt;3. Configuring Nginx config file (remote server)&lt;/h3&gt;
+
+&lt;p&gt;This can involve quite a few steps, however I've made a gist file which can be copied from &lt;a href=&quot;https://gist.github.com/Skull0Inc/d403bbc51a7a8b43b625cee158d6674a/raw/default-rails-ssl-nginx-config&quot;&gt;default-rails-ssl-nginx-config&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To set this file up navigate to the &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/sites-available&lt;/code&gt; folder and run:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Download the gist file, using the below command or just get access to the above linked info into a file somehow&lt;/span&gt;
+wget https://gist.github.com/Skull0Inc/d403bbc51a7a8b43b625cee158d6674a/raw/default-rails-ssl-nginx-config
+
+&lt;span class=&quot;c&quot;&gt;# After file downloads move it to a more preferred &amp;lt;your_app_name&amp;gt; (the name of your new Rails upstream)&lt;/span&gt;
+mv default-rails-ssl-nginx-config &amp;lt;your_app_name&amp;gt;
+
+&lt;span class=&quot;c&quot;&gt;# IMPORTANT: Make sure to EDIT and replace all occurances of &amp;lt;app_name&amp;gt; and &amp;lt;domain_name&amp;gt; with the correct info.&lt;/span&gt;
+vim &amp;lt;your_app_name&amp;gt;
+..
+..
+..
+&lt;span class=&quot;c&quot;&gt;# Make appropriate changes&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Next we need to create a symbolic link in &lt;code class=&quot;highlighter-rouge&quot;&gt;sites-enabled&lt;/code&gt; that points to the newly created &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;your_app_name&amp;gt;&lt;/code&gt; file we just downloaded/created in &lt;code class=&quot;highlighter-rouge&quot;&gt;sites-available&lt;/code&gt; . Do the following:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Reference ln -s {source-filename} {symbolic-filename}&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Go to /etc/nginx/sites-enabled/ and run&lt;/span&gt;
+ln &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /etc/nginx/sites-available/&amp;lt;your_app_name&amp;gt; /etc/nginx/sites-enabled/&amp;lt;your_app_name&amp;gt;
+
+&lt;span class=&quot;c&quot;&gt;# Restart Nginx&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service nginx reload
+&lt;span class=&quot;c&quot;&gt;# OR start if not already running&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service nginx start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Notes about this setup » At the time of setup for me there was already a set @app running for Rails and LetsEncrypt was setup &lt;strong&gt;after&lt;/strong&gt;&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;job_title&quot;=&gt;nil, &quot;location&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;social_links&quot;=&gt;[{&quot;name&quot;=&gt;&quot;facebook&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/skull0inc/&quot;}, {&quot;name&quot;=&gt;&quot;instagram&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;linkedin&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;stackoverflow&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;twitter&quot;, &quot;url&quot;=&gt;nil}, {&quot;name&quot;=&gt;&quot;vk&quot;, &quot;url&quot;=&gt;nil}]}</name></author><category term="rails" /><category term="ssl" /><category term="nginx" /><category term="https" /><summary type="html">Adding HTTPS to Rails-Nginx App (LetsEncrypt)</summary></entry><entry><title type="html">Adding custom fonts (Icomoon) to Jekyll</title><link href="http://localhost:4000/blog/2018/11/18/adding-custom-icomoon-fonts-to-jekyll/" rel="alternate" type="text/html" title="Adding custom fonts (Icomoon) to Jekyll" /><published>2018-11-18T00:00:00-04:00</published><updated>2018-11-18T00:00:00-04:00</updated><id>http://localhost:4000/blog/2018/11/18/adding-custom-icomoon-fonts-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/2018/11/18/adding-custom-icomoon-fonts-to-jekyll/">&lt;h2 id=&quot;heading-description&quot;&gt;Description&lt;/h2&gt;
 &lt;p&gt;While beginning this &lt;strong&gt;Jekyll&lt;/strong&gt; blog, I came across the desire to add custom icons to the set, but wasn't sure exactly how to. Initially I starte
 with &lt;a href=&quot;https://fontawesome.com&quot;&gt; Font-Awesome &lt;/a&gt; which could be integrated through the use of a Gem:&lt;a href=&quot;https://github.com/drewish/jekyll-font-awesome-sass&quot;&gt;jekyll-font-awesome-sass&lt;/a&gt;, however realized I only needed a custom subset of icons and decided to go with &lt;a href=&quot;https://icomoon.io&quot;&gt;Icomoon&lt;/a&gt; instead.&lt;/p&gt;
 
