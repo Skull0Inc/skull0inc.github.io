@@ -10,7 +10,7 @@ tags: [blog,theme]
 
 At some stage I added the blog - I believe through forking and cloning the original theme and then begun editing, customizing a few things along with mainly adding my own posts. It was saved using Git, pushed to GitHub and GitHub Pages along the special branch `gh-pages`.
 
-In GitHub there is the option to choose which branch to use, whether **'master'** or **'gh-pages'**. In our case we make sure that **'gh-pages'** is selected. When we now commit and push the **'gh-pages'** branch, the live site is updated.
+In GitHub there is the option to choose which branch to use, whether **'master'** or **'gh-pages'**. In our case we make sure that **'gh-pages'** is selected on GitHub so when we now commit and push the changes go to the **'gh-pages'** branch, where the live site is updated.
 
 ### Customizing (Layout & Data)
 
