@@ -25,6 +25,6 @@ Generally the user of this blog is mainly interested in the `_posts` folder wher
 
 ### Updating the Blog (pushing from localhost to gh-pages)
 
-At some stage I added the blog - I believe through forking and cloning the original theme and then begun editing, customizing a few things along with mainly adding my own posts. It was saved on GitHub and GitHub Pages(`gh-pages`). 
+At some stage I added the blog - I believe through forking and cloning the original theme and then begun editing, customizing a few things along with mainly adding my own posts. It was saved using Git, pushed to GitHub and GitHub Pages along the special branch `gh-pages`.
 
-In GitHub there is the option to choose which branch to use, whether **'master'** or **'gh-pages'**. In our case we make sure that **'gh-pages'** is selected. so that when we commit and push the **'gh-pages'** branch is updated and the new posts make it on.
+In GitHub there is the option to choose which branch to use, whether **'master'** or **'gh-pages'**. In our case we make sure that **'gh-pages'** is selected. When we now commit and push the **'gh-pages'** branch, the live site is updated.
