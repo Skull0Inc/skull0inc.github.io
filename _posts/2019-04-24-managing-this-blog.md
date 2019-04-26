@@ -12,7 +12,7 @@ At some stage I added the blog - I believe through forking and cloning the origi
 
 In GitHub there is the option to choose which branch to use, whether **'master'** or **'gh-pages'**. In our case we make sure that **'gh-pages'** is selected. When we now commit and push the **'gh-pages'** branch, the live site is updated.
 
-### Important Sections (Layout & Data) for Customizing
+### Customizing (Layout & Data)
 
 Edit stuff in these sections to change layouts 
 
