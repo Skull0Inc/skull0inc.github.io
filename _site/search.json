@@ -1,6 +1,13 @@
 [
   
     {
+      "title"      : "Managing Simple Texture(this) Jekyll Blog",
+      "url"        : "/blog/2019/04/24/managing-this-blog/",
+      "date"       : "2019-04-24 00:00:00 -0400",
+      "shortdate"  : "April 24, 2019"
+    } ,
+  
+    {
       "title"      : "Adding HTTPS to Rails-Nginx App",
       "url"        : "/blog/2019/04/23/adding-https-rails-nginx/",
       "date"       : "2019-04-23 00:00:00 -0400",
@@ -26,6 +33,13 @@
       "url"        : "/blog/2018/09/27/rails-routes-sample/",
       "date"       : "2018-09-27 00:00:00 -0400",
       "shortdate"  : "September 27, 2018"
+    } ,
+  
+    {
+      "title"      : "Motivation for this Blog (About)",
+      "url"        : "/blog/2018/08/08/about-this-blog/",
+      "date"       : "2018-08-08 00:00:00 -0400",
+      "shortdate"  : "August 08, 2018"
     } 
   
 ]
