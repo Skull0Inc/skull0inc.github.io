@@ -20,6 +20,7 @@ I chose Simple Texture because it fit all of the purposes I was looking for when
 2. Categories
 3. Tags
 4. A cool search that works well 
-5. A nice customizable intro cover, where any number of sections can be added.
+5. A nice customizable intro cover, where any number of sections can be added
+6. Offline editing
 
 All of the above is I think quite well designed and managed by yaml(key-pair values), javascript, liquid templating and markdown is left for the user to manage the blog posts.
