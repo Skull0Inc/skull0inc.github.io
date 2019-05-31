@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Only copy files that don't exist in new destination folder"
+title: "Only copy files that don't exist to new destination folder"
 description: "How to copy only new files without overwriting ones that already exist in Windows"
 categories: [Files, Windows]
 tags: [windows,command-line]
