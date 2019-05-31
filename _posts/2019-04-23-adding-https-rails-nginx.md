@@ -75,5 +75,5 @@ sudo service nginx start
 ~~~
 
 
-Notes about this setup >> At the time of setup for me there was already a set @app running for Rails and LetsEncrypt was setup **after**
+Notes about this setup >> At the time of setup for me there was already a set @app running for Rails and LetsEncrypt was setup **after**; therefore the order of doing things may not be exactly suited for every individual case, and not meant as a follow-blindly guide but more as a reference of steps needed.
 
