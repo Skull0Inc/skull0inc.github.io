@@ -1,6 +1,13 @@
 [
   
     {
+      "title"      : "Only copy files that don&#39;t exist in new destination folder",
+      "url"        : "/blog/2019/05/30/copy-files-that-dont-exist/",
+      "date"       : "2019-05-30 00:00:00 -0400",
+      "shortdate"  : "May 30, 2019"
+    } ,
+  
+    {
       "title"      : "Managing Simple Texture(this) Jekyll Blog",
       "url"        : "/blog/2019/04/24/managing-this-blog/",
       "date"       : "2019-04-24 00:00:00 -0400",
