@@ -1,7 +1,14 @@
 [
   
     {
-      "title"      : "Only copy files that don&#39;t exist in new destination folder",
+      "title"      : "How to properly push to gh-pages branch",
+      "url"        : "/blog/2019/05/31/pushing-to-gh-pages/",
+      "date"       : "2019-05-31 00:00:00 -0400",
+      "shortdate"  : "May 31, 2019"
+    } ,
+  
+    {
+      "title"      : "Only copy files that don&#39;t exist to new destination folder",
       "url"        : "/blog/2019/05/30/copy-files-that-dont-exist/",
       "date"       : "2019-05-30 00:00:00 -0400",
       "shortdate"  : "May 30, 2019"
