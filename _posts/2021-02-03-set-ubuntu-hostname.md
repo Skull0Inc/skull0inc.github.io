@@ -6,7 +6,7 @@ categories: [Ubuntu, Linux]
 tags: [linux,ubuntu,ssh,hostname]
 ---
 
-### Ubuntu: how to change computer @hostname back using 20.xx.x x
+### Ubuntu: how to change computer @hostname back using 20.xx.x
 
 After previously doing some ubuntu system upgrades (18.xx.x - 20.xx.x) and mostly switching the laptop off due to some battery/charge-port relate issues - one day I finally had to switch it on to get some much required work pushed, only to discover that my **SSH push changes were being denied**. 
 
