@@ -12,7 +12,7 @@ After previously doing some ubuntu system upgrades (18.xx.x - 20.xx.x) and mostl
 
 **'remote: Forbidden', 'fatal: unable to access'**
 
-So after a bit of time digging through my ~/.ssh/config, checking access keys entered into the remote repo, creating new keys and changing the repo url to something like: *url=ssh://git@..* or *url=git@ ...* I managed to get a hostname error pop up and then I realized they my hostname was now saying '@127' instead of the regular name. This hostname mismatch was causing the error for my git not being able to push because it didnt recognize the new name. So as a result I had to end up re-setting the hostname in Ubunto which goes like this:
+So after a bit of time digging through my ~/.ssh/config, checking access keys entered into the remote repo, creating new keys and changing the repo url to something like: *url=ssh://git@..* or *url=git@ ...* I managed to get a hostname error pop up and then I realized they my hostname was now saying '@127' instead of the regular name. This hostname mismatch was causing the error for my git not being able to push because it didnt recognize the new name. So as a result I had to end up re-setting the hostname in Ubuntu which goes like this:
 
 #### Steps
 1. hostnamectl (check hostname)
