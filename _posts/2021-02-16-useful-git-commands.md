@@ -15,25 +15,28 @@ git remote -v
 ```
 
 
-~~~console
+```console
 HTTPS
 # origin  https://github.com/user/repo.git (fetch)
 # origin  https://github.com/user/repo.git (push)
-~~~
+```
 
+
+```console
 SSH
 # origin  git@github.com:user/repo-name (fetch)
 # origin  git@github.com:user/repo-name (push)
+```
 
-~~~
+```console
+SSH
 # Change the 'origin' remote's URL
 
 git remote set-url <origin> <https://github.com/user/repo2.git>
-~~~
+```
 
-~~~
+```console
 # Allow to push an empty message to log
-
 git commit --allow-empty -m "some message commit w/o actual file changes"
-~~~
+```
 
