@@ -14,9 +14,12 @@ tags: [git,devops]
 git remote -v
 ```
 
+
+~~~console
 HTTPS
 # origin  https://github.com/user/repo.git (fetch)
 # origin  https://github.com/user/repo.git (push)
+~~~
 
 SSH
 # origin  git@github.com:user/repo-name (fetch)
