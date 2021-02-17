@@ -8,11 +8,11 @@ tags: [git,devops]
 
 ### Git Basic Commands (reminders)
 
-~~~
+```console
 # View existing remotes
 
 git remote -v
-~~~
+```
 
 HTTPS
 # origin  https://github.com/user/repo.git (fetch)
