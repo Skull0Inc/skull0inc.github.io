@@ -25,9 +25,7 @@ git remote -v
 
 #### Change the 'origin' remote's URL
 
-```console
-git remote set-url <origin> <https://github.com/user/repo2.git>
-```
+`git remote set-url <origin> <https://github.com/user/repo2.git>`
 
 #### Allow to push an empty message to log
 
